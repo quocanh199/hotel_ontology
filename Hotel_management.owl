@@ -1,0 +1,575 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/quoca/ontologies/2022/2/untitled-ontology-2#"
+     xml:base="http://www.semanticweb.org/quoca/ontologies/2022/2/untitled-ontology-2"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:hotel_management="http://www.semanticweb.org/quoca/ontologies/hotel_management#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Stay_at -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Stay_at">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Client"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_section"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Use_equipment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Use_equipment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Staff"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Equipment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Work_at -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Work_at">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Staff"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#address">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Human"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#age">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Human"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Human"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Client -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Client">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Human"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Equipment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Equipment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_equipment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_equipment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Equipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_section -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_section">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Human -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Human"/>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_equipment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_equipment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Equipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_section -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_section">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Place"/>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_equipment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_equipment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Equipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_section -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_section">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Human"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Baby_sitter_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Baby_sitter_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_staff"/>
+        <hotel_management:Use_equipment rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_equipment_1"/>
+        <hotel_management:Work_at rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_201"/>
+        <hotel_management:address>Baker street</hotel_management:address>
+        <hotel_management:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</hotel_management:age>
+        <hotel_management:name>Jessica</hotel_management:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Baby_sitter_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Baby_sitter_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_staff"/>
+        <hotel_management:Use_equipment rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_equipment_2"/>
+        <hotel_management:Work_at rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_202"/>
+        <hotel_management:address>12 trung kinh</hotel_management:address>
+        <hotel_management:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</hotel_management:age>
+        <hotel_management:name>Toan</hotel_management:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Bell_man_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Bell_man_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_staff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Bell_man_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Bell_man_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_staff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Bell_man_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Bell_man_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_staff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Cashier_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Cashier_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_staff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Chef_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Chef_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_staff"/>
+        <hotel_management:Work_at rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Chef_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Chef_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_staff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Client_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Client_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Client"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Client_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Client_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Client"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Cook_assistant_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Cook_assistant_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_staff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Cook_assistant_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Cook_assistant_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_staff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Cook_assistant_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Cook_assistant_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_staff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Desk_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Desk_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_section"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Desk_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Desk_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_section"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_equipment_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_equipment_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_equipment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_equipment_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_equipment_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_equipment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_equipment_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_equipment_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_equipment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Hall_A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Hall_A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_section"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Hall_B -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Hall_B">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_section"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#House_keeping_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#House_keeping_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_staff"/>
+        <hotel_management:Work_at rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_201"/>
+        <hotel_management:address>Saigon</hotel_management:address>
+        <hotel_management:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</hotel_management:age>
+        <hotel_management:name>Jack</hotel_management:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#House_keeping_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#House_keeping_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_staff"/>
+        <hotel_management:Work_at rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_202"/>
+        <hotel_management:address>London</hotel_management:address>
+        <hotel_management:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</hotel_management:age>
+        <hotel_management:name>Andrew Ng</hotel_management:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#House_keeping_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#House_keeping_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_staff"/>
+        <hotel_management:Work_at rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_203"/>
+        <hotel_management:address>France</hotel_management:address>
+        <hotel_management:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</hotel_management:age>
+        <hotel_management:name>Jamie</hotel_management:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_section"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_section"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_equipment_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_equipment_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_equipment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_equipment_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_equipment_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_equipment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_equipment_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_equipment_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_equipment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Laundry_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Laundry_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_staff"/>
+        <hotel_management:Use_equipment rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_equipment_3"/>
+        <hotel_management:Work_at rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_203"/>
+        <hotel_management:address>America</hotel_management:address>
+        <hotel_management:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</hotel_management:age>
+        <hotel_management:name>Logan</hotel_management:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Laundry_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Laundry_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_staff"/>
+        <hotel_management:Use_equipment rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_equipment_3"/>
+        <hotel_management:Work_at rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_202"/>
+        <hotel_management:address>Texas</hotel_management:address>
+        <hotel_management:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</hotel_management:age>
+        <hotel_management:name>Hannah</hotel_management:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Receptionist_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Receptionist_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_staff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_201 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_201">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_section"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_202 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_202">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_section"/>
+        <hotel_management:Use_equipment rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_equipment_3"/>
+        <hotel_management:Work_at rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_202"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_203 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_203">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_section"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_equipment_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_equipment_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_equipment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_equipment_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_equipment_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_equipment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_equipment_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_equipment_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_equipment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Waitress_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Waitress_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_staff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Waitress_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Waitress_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_staff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Waitress_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Waitress_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_staff"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
