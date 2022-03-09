@@ -60,6 +60,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#Gender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Gender">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Human"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#address -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#address">
@@ -83,6 +92,15 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#name">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Human"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/quoca/ontologies/hotel_management#price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#price">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Equipment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 
@@ -221,9 +239,10 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_staff"/>
         <hotel_management:Use_equipment rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_equipment_1"/>
         <hotel_management:Work_at rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_201"/>
-        <hotel_management:address>Baker street</hotel_management:address>
+        <hotel_management:Gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hotel_management:Gender>
+        <hotel_management:address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baker street</hotel_management:address>
         <hotel_management:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</hotel_management:age>
-        <hotel_management:name>Jessica</hotel_management:name>
+        <hotel_management:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vanitas</hotel_management:name>
     </owl:NamedIndividual>
     
 
@@ -234,6 +253,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_staff"/>
         <hotel_management:Use_equipment rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_equipment_2"/>
         <hotel_management:Work_at rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_202"/>
+        <hotel_management:Gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hotel_management:Gender>
         <hotel_management:address>12 trung kinh</hotel_management:address>
         <hotel_management:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</hotel_management:age>
         <hotel_management:name>Toan</hotel_management:name>
@@ -245,6 +265,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Bell_man_1">
         <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_staff"/>
+        <hotel_management:Use_equipment rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_equipment_2"/>
+        <hotel_management:Work_at rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Hall_A"/>
+        <hotel_management:Gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hotel_management:Gender>
+        <hotel_management:address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saitama,Nipon</hotel_management:address>
+        <hotel_management:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</hotel_management:age>
+        <hotel_management:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kyoko</hotel_management:name>
     </owl:NamedIndividual>
     
 
@@ -253,6 +279,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Bell_man_2">
         <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_staff"/>
+        <hotel_management:Use_equipment rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_equipment_2"/>
+        <hotel_management:Work_at rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Hall_B"/>
+        <hotel_management:Gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hotel_management:Gender>
+        <hotel_management:address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Osaka,Nipon</hotel_management:address>
+        <hotel_management:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</hotel_management:age>
+        <hotel_management:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Izumi</hotel_management:name>
     </owl:NamedIndividual>
     
 
@@ -261,6 +293,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Bell_man_3">
         <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_staff"/>
+        <hotel_management:Use_equipment rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_equipment_3"/>
+        <hotel_management:Work_at rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Hall_B"/>
+        <hotel_management:Gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hotel_management:Gender>
+        <hotel_management:address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tokyo,Nipon</hotel_management:address>
+        <hotel_management:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</hotel_management:age>
+        <hotel_management:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Komi</hotel_management:name>
     </owl:NamedIndividual>
     
 
@@ -269,6 +307,11 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Cashier_1">
         <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_staff"/>
+        <hotel_management:Work_at rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Desk_1"/>
+        <hotel_management:Gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hotel_management:Gender>
+        <hotel_management:address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">North London</hotel_management:address>
+        <hotel_management:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</hotel_management:age>
+        <hotel_management:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Galahad</hotel_management:name>
     </owl:NamedIndividual>
     
 
@@ -278,6 +321,10 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Chef_1">
         <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_staff"/>
         <hotel_management:Work_at rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_1"/>
+        <hotel_management:Gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hotel_management:Gender>
+        <hotel_management:address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">236 Hoang Quoc Viet,Ha Noi</hotel_management:address>
+        <hotel_management:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</hotel_management:age>
+        <hotel_management:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Noe</hotel_management:name>
     </owl:NamedIndividual>
     
 
@@ -286,6 +333,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Chef_2">
         <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_staff"/>
+        <hotel_management:Use_equipment rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_equipment_1"/>
+        <hotel_management:Work_at rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_2"/>
+        <hotel_management:Gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hotel_management:Gender>
+        <hotel_management:address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">89 Cau Giay, Ha Noi</hotel_management:address>
+        <hotel_management:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</hotel_management:age>
+        <hotel_management:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeanne D&apos;Arc</hotel_management:name>
     </owl:NamedIndividual>
     
 
@@ -310,6 +363,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Cook_assistant_1">
         <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_staff"/>
+        <hotel_management:Use_equipment rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_equipment_2"/>
+        <hotel_management:Work_at rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_2"/>
+        <hotel_management:Gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hotel_management:Gender>
+        <hotel_management:address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">256 Grand Clock Tower, London</hotel_management:address>
+        <hotel_management:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</hotel_management:age>
+        <hotel_management:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atoria Pendragon</hotel_management:name>
     </owl:NamedIndividual>
     
 
@@ -318,6 +377,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Cook_assistant_2">
         <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_staff"/>
+        <hotel_management:Use_equipment rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_equipment_3"/>
+        <hotel_management:Work_at rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_1"/>
+        <hotel_management:Gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hotel_management:Gender>
+        <hotel_management:address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">67 Blönduós,Iceland</hotel_management:address>
+        <hotel_management:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</hotel_management:age>
+        <hotel_management:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal&apos;Bog</hotel_management:name>
     </owl:NamedIndividual>
     
 
@@ -326,6 +391,11 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Cook_assistant_3">
         <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_staff"/>
+        <hotel_management:Work_at rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_2"/>
+        <hotel_management:Gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hotel_management:Gender>
+        <hotel_management:address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Greenford, London</hotel_management:address>
+        <hotel_management:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</hotel_management:age>
+        <hotel_management:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gawain</hotel_management:name>
     </owl:NamedIndividual>
     
 
@@ -350,6 +420,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_equipment_1">
         <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_equipment"/>
+        <hotel_management:price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50000</hotel_management:price>
     </owl:NamedIndividual>
     
 
@@ -358,6 +429,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_equipment_2">
         <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_equipment"/>
+        <hotel_management:price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50000</hotel_management:price>
     </owl:NamedIndividual>
     
 
@@ -366,6 +438,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_equipment_3">
         <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_equipment"/>
+        <hotel_management:price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40000</hotel_management:price>
     </owl:NamedIndividual>
     
 
@@ -391,6 +464,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#House_keeping_1">
         <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_staff"/>
         <hotel_management:Work_at rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_201"/>
+        <hotel_management:Gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hotel_management:Gender>
         <hotel_management:address>Saigon</hotel_management:address>
         <hotel_management:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</hotel_management:age>
         <hotel_management:name>Jack</hotel_management:name>
@@ -403,6 +477,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#House_keeping_2">
         <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_staff"/>
         <hotel_management:Work_at rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_202"/>
+        <hotel_management:Gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hotel_management:Gender>
         <hotel_management:address>London</hotel_management:address>
         <hotel_management:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</hotel_management:age>
         <hotel_management:name>Andrew Ng</hotel_management:name>
@@ -415,6 +490,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#House_keeping_3">
         <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_staff"/>
         <hotel_management:Work_at rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_203"/>
+        <hotel_management:Gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hotel_management:Gender>
         <hotel_management:address>France</hotel_management:address>
         <hotel_management:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</hotel_management:age>
         <hotel_management:name>Jamie</hotel_management:name>
@@ -442,6 +518,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_equipment_1">
         <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_equipment"/>
+        <hotel_management:price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60000</hotel_management:price>
     </owl:NamedIndividual>
     
 
@@ -450,6 +527,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_equipment_2">
         <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_equipment"/>
+        <hotel_management:price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40000</hotel_management:price>
     </owl:NamedIndividual>
     
 
@@ -458,6 +536,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_equipment_3">
         <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_equipment"/>
+        <hotel_management:price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50000</hotel_management:price>
     </owl:NamedIndividual>
     
 
@@ -468,6 +547,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_staff"/>
         <hotel_management:Use_equipment rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_equipment_3"/>
         <hotel_management:Work_at rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_203"/>
+        <hotel_management:Gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hotel_management:Gender>
         <hotel_management:address>America</hotel_management:address>
         <hotel_management:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</hotel_management:age>
         <hotel_management:name>Logan</hotel_management:name>
@@ -481,6 +561,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_staff"/>
         <hotel_management:Use_equipment rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_equipment_3"/>
         <hotel_management:Work_at rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_202"/>
+        <hotel_management:Gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hotel_management:Gender>
         <hotel_management:address>Texas</hotel_management:address>
         <hotel_management:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</hotel_management:age>
         <hotel_management:name>Hannah</hotel_management:name>
@@ -492,6 +573,11 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Receptionist_1">
         <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Front_office_staff"/>
+        <hotel_management:Work_at rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Desk_2"/>
+        <hotel_management:Gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hotel_management:Gender>
+        <hotel_management:address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hiroshima,Nipon</hotel_management:address>
+        <hotel_management:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</hotel_management:age>
+        <hotel_management:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emiya Shirou</hotel_management:name>
     </owl:NamedIndividual>
     
 
@@ -526,6 +612,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_equipment_1">
         <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_equipment"/>
+        <hotel_management:price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60000</hotel_management:price>
     </owl:NamedIndividual>
     
 
@@ -534,6 +621,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_equipment_2">
         <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_equipment"/>
+        <hotel_management:price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50000</hotel_management:price>
     </owl:NamedIndividual>
     
 
@@ -542,6 +630,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_equipment_3">
         <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_department_equipment"/>
+        <hotel_management:price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60000</hotel_management:price>
     </owl:NamedIndividual>
     
 
@@ -550,6 +639,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Waitress_1">
         <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_staff"/>
+        <hotel_management:Use_equipment rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_equipment_2"/>
+        <hotel_management:Work_at rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_1"/>
+        <hotel_management:Gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hotel_management:Gender>
+        <hotel_management:address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Perivale,London</hotel_management:address>
+        <hotel_management:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</hotel_management:age>
+        <hotel_management:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lancerlot</hotel_management:name>
     </owl:NamedIndividual>
     
 
@@ -558,6 +653,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Waitress_2">
         <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_staff"/>
+        <hotel_management:Work_at rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_2"/>
+        <hotel_management:Work_at rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_equipment_2"/>
+        <hotel_management:Gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hotel_management:Gender>
+        <hotel_management:address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Horsenden,London</hotel_management:address>
+        <hotel_management:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</hotel_management:age>
+        <hotel_management:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tristan</hotel_management:name>
     </owl:NamedIndividual>
     
 
@@ -566,6 +667,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Waitress_3">
         <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_staff"/>
+        <hotel_management:Use_equipment rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_equipment_2"/>
+        <hotel_management:Work_at rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Kitchen_2"/>
+        <hotel_management:Gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hotel_management:Gender>
+        <hotel_management:address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maida Hill,London</hotel_management:address>
+        <hotel_management:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</hotel_management:age>
+        <hotel_management:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saber Alter</hotel_management:name>
     </owl:NamedIndividual>
 </rdf:RDF>
 
