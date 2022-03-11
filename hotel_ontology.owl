@@ -424,6 +424,9 @@
         <hotel_management:Stay_at rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_202"/>
         <hotel_management:Use_service rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Baby_sitting"/>
         <hotel_management:Use_service rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Laundry"/>
+        <hotel_management:Use_service rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_checkin"/>
+        <hotel_management:Use_service rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_checkout"/>
+        <hotel_management:Use_service rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_cleaning"/>
         <hotel_management:Gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hotel_management:Gender>
         <hotel_management:address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uruk</hotel_management:address>
         <hotel_management:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</hotel_management:age>
@@ -437,8 +440,12 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/quoca/ontologies/hotel_management#Client_2">
         <rdf:type rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Client"/>
         <hotel_management:Stay_at rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_201"/>
+        <hotel_management:Use_service rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Baby_sitting"/>
         <hotel_management:Use_service rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Carry_luggage"/>
         <hotel_management:Use_service rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Eat"/>
+        <hotel_management:Use_service rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_checkin"/>
+        <hotel_management:Use_service rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_checkout"/>
+        <hotel_management:Use_service rdf:resource="http://www.semanticweb.org/quoca/ontologies/hotel_management#Room_cleaning"/>
         <hotel_management:Gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hotel_management:Gender>
         <hotel_management:address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The round table</hotel_management:address>
         <hotel_management:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</hotel_management:age>
